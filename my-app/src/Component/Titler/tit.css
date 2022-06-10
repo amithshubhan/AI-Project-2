@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@keyframes mymove {
+    from {max-width: 0px;}
+    to {amx-width: 600px;}
+  }
+
+html{
+	font-family: 'Anton', sans-serif;
+}
+
+.container {
+	display: flex;
+    padding-top: 120px;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+  overflow:hidden;
+  
+}
+
+.wrapper{
+    width: fit-content;
+    max-width:600px;
+    animation: mymove 0.7s;
+    animation-fill-mode: forwards;
+
+  background:linear-gradient(124deg,
+    white 50%,
+    black 50%
+	);
+}
+h1{
+	
+	font-size:90px;
+    width: fit-content;
+	text-transform:uppercase;
+	color:transparent;
+	letter-spacing:0.2vw;
+	margin:0;
+	background:linear-gradient(124deg,
+		black 50%,
+    white 50%
+	);
+
+	-webkit-background-clip:text;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:100% 100%;
+	transition:all 0.5s;
+}

@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+:root {
+    --body-bg: #f5f8ff;
+    --box-bg: #fff;
+    --input-bg: #f5f8ff;
+    --txt-color: #2f2d2f;
+    --txt-second-color: #ccc;
+    --border-color: #4267b2;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+body{
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
