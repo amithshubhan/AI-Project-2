@@ -16,6 +16,7 @@ const handleSubmit = () => {
     }).then( (response) => response.json()).then(function(message) {
       console.log(typeof(message.message));
       propn.setans(message.message);
+      propn.setpic(true);
         return console.log(message.message)});
     // console.log(fileList)
     // console.log('file things are ',fileList[0])

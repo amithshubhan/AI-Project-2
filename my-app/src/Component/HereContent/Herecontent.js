@@ -4,14 +4,17 @@ import DropFileInput from '../drop-file-input/DropFileInput'
 import '../../assets/App.css'
 import Recorder from '../Recorder/Recorder'
 import Recorder2 from '../Recorder2/Recorder2'
+import {MainCont,Left,Right,Img,Texter} from './Herecontentele'
 
 const Herecontent = () => {
     const [loading, setLoad] = useState(false);
     const [ans,setans] = useState("");
-
+    const [pic,setpic] = useState(false);
+    console.log(pic);
     const onFileChange = (files) => {
         console.log(files);
     }
+    let source = "./images/"+ans+".png";
   return (
     <>
     <MainCont>
@@ -28,71 +31,25 @@ const Herecontent = () => {
             onFileChange={(files) => onFileChange(files)}
             ans = {ans}
             setans = {setans}
+            pic = {pic}
+            setpic = {setpic}
             />
     </div>
 </div>
         </Left>
         <Right>
             <Recorder2 ans = {ans}
-            setans = {setans}/>
+            setans = {setans}
+            pic = {pic}
+            setpic = {setpic}
+            />
         </Right>
 
         </MainCont>
-        <Texter>{ans}</Texter>
+        <Img pic = {pic}><img src = {source} alt =""/></Img>
+        <Texter pic = {pic}>{ans.toUpperCase()}</Texter>
     </>
   )
 }
 
-export default Herecontent
-
-const MainCont = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    // height: auto;
-    /* padding-top: 140px; */
-    justify-content: center;
-    align-items: center;
-
-`
-const Texter = styled.div`
-display: flex;
-justify-content:center ;
-align-items: center;
-font-size: 50px;
-
-`
-
-
-
-const Left = styled.div`
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-    
-    .now{
-        position: absolute;
-        right: -50px;
-        z-index: 1;
-        height: 500px;
-        width: 1px;
-        background-color: black;
-        
-    }
-    .herebody{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        border-radius:10px ;
-        /* border: 3px solid black; */
-    }
-    .header{
-        padding: 30px 10px;
-
-    }
-`
-const Right = styled.div`
-    padding: 100px;
-`
+export default Herecontent;

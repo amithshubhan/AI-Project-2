@@ -64,6 +64,7 @@ const DropFileInput = props => {
     const handleSubmit = (event) => {
         event.preventDefault();
         props.setLoad(true);
+        props.setpic(false);
         const data = new FormData();
         data.append('file', fileList[0])
         data.append('filename', fileList[0].name);
@@ -73,6 +74,9 @@ const DropFileInput = props => {
         }).then( (response) => response.json()).then(function(message) {
             props.setLoad(false);
             props.setans(message.message);
+            // console.log(props.pic);
+            props.setpic(true);
+            // console.log(props.pic);
             return console.log(message.message)});
         // console.log(fileList)
         // console.log('file things are ',fileList[0])
