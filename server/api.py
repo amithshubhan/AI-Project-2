@@ -33,16 +33,17 @@ cors = CORS(app)
 def upload():
     file = request.files['file'] 
     filename = (file.filename)
-    # file.save(f'uploads/{filename}')
+    
     src = "transcript.mp3"
     dst = "test.wav"
     # newfile = 
     
-    if filename.endswith('.mp3'):
-        sound = AudioSegment.from_mp3(file)
-        sound.export(dst, format="wav")
+    if filename.endswith('.wav'):
+        file.save(f'test.wav')
     else:
-        file.save(dst)
+        file.save(f'uploads/{filename}')
+        sound = AudioSegment.from_mp3(f'uploads/{filename}')
+        sound.export(dst, format="wav")
     ext_fil = features_extractor(dst)
     print(ext_fil.shape)
     ext_fil = np.expand_dims(ext_fil,axis = 0)

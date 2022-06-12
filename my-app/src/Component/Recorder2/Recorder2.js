@@ -57,7 +57,7 @@ class Recorder2 extends React.Component {
             lastModified: Date.now()
           });
           console.log(file);
-          handleSubmit();
+          // handleSubmit();
         const blobURL = URL.createObjectURL(blob)
         this.setState({ blobURL, isRecording: false });
       }).catch((e) => console.log(e));

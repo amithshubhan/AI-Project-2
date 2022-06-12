@@ -12,8 +12,8 @@ const About = () => {
   const span2 = "Bhuvan";
   const span3 = "Shashank";
   const disc1 = "I am a web developer primarily working on MERN stack .My role to the project has been to make the front end and connection to backend through flask to make the whole website";
-  const disc2 = "My expertise is in backend development and deep learning. My role in the project was developing CNN model for the dataset.";
-  const disc3 = "My expertise is Machine Learning. My role in the project was dataset searching and data processing that takes MFCC of audio as input increasing accuracy of the model.";
+  const disc2 = "I am into backend development and deep learning. My role in the project was developing CNN model for the dataset.";
+  const disc3 = "I am into Machine Learning. My role in the project was dataset searching and data processing that takes MFCC of audio as input increasing accuracy of the model.";
   return (
     <>
       <Navbar/>

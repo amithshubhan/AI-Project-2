@@ -8,11 +8,11 @@ import styled,{keyframes} from 'styled-components';
 const Home = () => {
   const title = "INFORMATION";
   const firstsqtit = "WHAT?";
-  const firstsqinfo = "We have developed an ML model which takes in an audio input and finds out what emotion the person is going through." 
+  const firstsqinfo = "We have developed an Deep Learning model which takes in an audio input and finds out what emotion the person is going through." 
   const secsqtit = "WHY?";
   const secsqinfo = "To majorly help health experts to decide when patient needs medicine, access their emotional response in clinical trials or to help physicians in deciding how to best triage their patients."
   const thisqtit = "HOW?";
-  const thisqinfo = "We have used CNN algorithm to train the dataset giving rise to 98% of accuracy against the test data."
+  const thisqinfo = "We have used CNN algorithm to train the dataset giving rise to 92% of accuracy against the test data."
   return (
     <>
       <Navbar/>

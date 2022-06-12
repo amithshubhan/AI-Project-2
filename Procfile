@@ -1,1 +1,0 @@
-web: waitress api:app

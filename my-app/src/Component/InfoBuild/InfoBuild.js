@@ -41,7 +41,7 @@ const InfoCont = styled.div`
   display: flex;
   background: white;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   position: relative;
   border: 6px solid #000;
